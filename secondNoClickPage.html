@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First No Click Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #fadadd;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .image-container {
+            margin: 20px auto;
+            width: 70%;
+            overflow: hidden;
+        }
+        img {
+            width: 80%;
+            height: auto;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #6a5acd;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .back-button:hover {
+            background-color: #5a4abd;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src=cat-heart.gif alt="Descriptive text about the image">
+    </div>
+    <h1>omggg you clicked the wrong one AGAIN. that's so embarrassing &#128516;</h1>
+    <p></p>
+    <p>try again !!</p>
+    <!-- Back Button -->
+    <button class="back-button" onclick="goBack()">Go Back</button>
+
+    <script>
+        function goBack() {
+            window.history.back(); // Uses the browser's history stack to navigate back
+        }
+    </script>
+</body>
+</html>

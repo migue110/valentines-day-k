@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First No Click Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #fadadd;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .image-container {
+            margin: 20px auto;
+            width: 70%;
+            overflow: hidden;
+        }
+        img {
+            width: 100%; /* Changed to fill the container width */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="cat-flowers.gif" alt="Descriptive text about the image">
+    </div>
+    <h1>YAYYYYY</h1>
+    <p>I had 100% faith that you would choose this one! I Love You sooo much and I'll see you soon &#9829;&#9829;&#9829;</p>
+
+    <!-- Confetti Script -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1/dist/confetti.min.js"></script>
+    <script>
+        // Ensure the confetti script executes after the document is fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            confetti({
+                particleCount: 150,
+                spread: 120,
+                origin: { y: 0.6 }
+            });
+        });
+    </script>
+</body>
+</html>
